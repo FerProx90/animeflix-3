@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  z-index: 100;
+
+  width: 100%;
+
+  background: none;
+}
+
+.navbar {
+  height: 100%;
+  padding: 1.5rem 8%;
+
+  color: var(--color-blanco);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_buttons {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.navbar-login {
+  background-color: var(--color-naranja);
+}
+
+.navbar-inicio {
+  background-color: var(--navbar-inicio);
+}
+
+.navbar_user {
+  font-size: 1.1rem;
+}
+
+.navbar_logo {
+  width: 120px;
+}

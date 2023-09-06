@@ -1,0 +1,51 @@
+.button {
+  padding: 0.5rem 0.9rem;
+  border-radius: 5px;
+
+  background-color: var(--color-boton);
+  color: var(--color-blanco);
+
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  outline: none;
+  border: none;
+}
+
+.button-home {
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.button-home:hover {
+  background-color: var(--color-rojo-oscuro-hover);
+}
+
+.button-login {
+  background: none;
+  outline: 2px solid var(--color-blanco);
+  color: var(--color-blanco);
+}
+
+.button-form {
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+
+  background-color: var(--color-verde);
+  font-weight: 700;
+
+  transition: all 0.3s;
+}
+
+.button-form:hover {
+  background-color: var(--color-verde-oscuro-hover);
+}
+
+.button-create_account {
+  background: none;
+  text-decoration: underline;
+  color: var(--color-ciencia-ficcion);
+}

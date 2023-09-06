@@ -1,0 +1,24 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 30px;
+}
+
+.form_inputs_container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form_inputs_container span {
+  color: var(--color-rojo);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: 500;
+}
