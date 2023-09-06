@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: var(--color-blanco);
 
   position: relative;
 
@@ -25,22 +26,25 @@
 }
 
 .banner h2 {
-  color: var(--color-blanco);
+  font-family: var(--font-banner-title);
+  font-size: 3.5rem;
+}
+
+.banner span {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .banner_content {
-  outline: 1px solid red;
-  width: 40%;
+  /* outline: 1px solid red; */
+  width: 45%;
+  min-width: 400px;
 
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  gap: 15px;
 
   z-index: 50;
-}
-
-.banner_content-buttons {
-  display: flex;
-  gap: 10px;
 }

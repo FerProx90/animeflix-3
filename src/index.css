@@ -4,6 +4,9 @@
 /*fuente Lora desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 
+/*fuente Noto desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;600;700&display=swap");
+
 :root {
   /* Colores principales */
   --color-negro: #000;
@@ -12,6 +15,7 @@
   --color-blanco: #fff;
   --color-gris: #555; /* Gris ligeramente más oscuro */
   --color-gris-opacity: #55555570;
+  --color-gris-oscuro: #3b3b3b;
   --color-verde: #00c853;
   --color-verde-oscuro-hover: #007a3d;
   --color-naranja: #ffa600e3;
@@ -30,6 +34,8 @@
   --color-boton-secundario: var(--color-blanco);
 
   --navbar-inicio: rgba(0, 0, 0, 0.5);
+
+  --font-banner-title: "Noto Sans JP", sans-serif;
 }
 
 * {

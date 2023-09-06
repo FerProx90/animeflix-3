@@ -1,16 +1,17 @@
 import React from "react";
 import { PiPlayFill, PiInfoBold } from "react-icons/pi";
+import "./styles.css";
 
 function ButtonSeries() {
   return (
-    <div>
-      <button>
+    <div className="buttons-series_container">
+      <button className="button-play">
         <PiPlayFill />
         Play
       </button>
-      <button>
+      <button className="button-info">
         <PiInfoBold />
-        Info
+        Mas info
       </button>
     </div>
   );
