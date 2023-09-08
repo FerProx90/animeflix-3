@@ -1,12 +1,16 @@
-import React from "react";
 import "./styles.css";
 import Banner from "../../components/banner/Banner";
+import Category from "../../components/category/Category";
 
 function Main() {
   return (
-    <section>
+    <main>
       <Banner />
-    </section>
+      <section>
+        <Category />
+        <Category />
+      </section>
+    </main>
   );
 }
 
