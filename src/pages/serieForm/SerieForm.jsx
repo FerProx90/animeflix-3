@@ -84,7 +84,6 @@ function SerieForm() {
       },
     ]);
 
-    console.log(series);
     setIsDataSaved(true);
     resetInputs();
 

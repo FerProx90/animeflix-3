@@ -42,6 +42,7 @@
   font-weight: 700;
 
   transition: all 0.3s;
+  text-align: center;
 }
 
 .button-form:hover {

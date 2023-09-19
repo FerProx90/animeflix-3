@@ -1,5 +1,6 @@
 .input {
   position: relative;
+  text-transform: capitalize;
 }
 
 .input input::placeholder,
