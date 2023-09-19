@@ -1,0 +1,34 @@
+.serie_container {
+  min-height: 100dvh;
+  background-color: var(--background-primary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+
+  color: var(--color-blanco);
+}
+
+.serie_container h2 {
+  text-transform: uppercase;
+}
+
+.serie_container-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.serie_container-item p {
+  width: 100%;
+  max-width: 450px;
+}
+
+.serie-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -211,6 +211,60 @@ const series = [
       "https://i0.wp.com/www.gamerfocus.co/wp-content/uploads/2022/04/Cuando-sale-Spy-x-Family-doblada-al-espanol-de-Latinoamerica.jpg?fit=1224%2C646&ssl=1",
     category: "comedia",
   },
+  {
+    id: v4(),
+    name: "Senpai ga Uzai Kouhai no Hanashi",
+    description: `También conocida como My Senpai is Annoying. Futaba, que trabaja en una empresa comercial, lleva años orgullosa de su posición, la cual logró encontrar gracias a la amabilidad de su superior, Harumi Takeda. No obstante, su superior se burla de su corta estatura de manera constante, además de tratarla como una niña pequeña, sacándola de quicio. Sin embargo, Takeda confía plenamente en Futaba, y sabe que es perfectamente capaz en su trabajo. Esta conexión que tienen es especial, ¿pero si pasan más tiempo juntos, se podrán volver algo más que solo compañeros de trabajo?`,
+    video: "https://www.youtube.com/embed/Q4DoDFH_MHo?si=QfZ-4JU5HuNtfSeC",
+    imagen:
+      "https://www.anmosugoi.com/wp-content/uploads/2021/10/Senpai-ga-Uzai-Kouhai-no-Hanashi-y-Kawaii-dake-ja-Nai-Shikimori-San-anuncian-una-colaboracion.jpg",
+    category: "comedia",
+  },
+  {
+    id: v4(),
+    name: "Gokushufudou",
+    description: `También conocida como The Way of the Househusband. En esta hilarante historia, seguimos a Tatsu, un antiguo yakuza reformado que ahora se dedica a ser amo de casa. Luego de dejar la vida dentro de la mafia japonesa, descubrirá que el trabajo de llevar el hogar es más complicado de lo que pensaba, pero poco a poco, va perfeccionando el arte de la cocina, la limpieza y el orden. Y todo por ser un buen esposo y un hombre digno para la mujer de su vida.`,
+    video: "https://www.youtube.com/embed/cvZ9thKolOA?si=L2K2tBAi-Ue-YEr9",
+    imagen:
+      "https://i0.wp.com/mariviu.com/wp-content/uploads/2021/04/the-way-of-the-househusband-Netflix.jpg?fit=1000%2C625&ssl=1",
+    category: "comedia",
+  },
+  {
+    id: v4(),
+    name: "Grand Blue",
+    description: `Iori Kitahara se acaba de mudar a una ciudad costera durante su primer año como universitario. Pronto comienza a trabajar en Grand Blue, la tienda de productos de submarinismo de su abuelo, y al entrar en la misma por primera vez, descubre un mundo lleno de fiestas irresponsables con muchas bebidas incluidas. Todas estas personas pertenecen al club de submarinismo de su universidad, y pronto se une al grupo de fiesteros sin control.`,
+    video: "https://www.youtube.com/embed/CPhpXnfS7Oc?si=GScsOoXa18zLnZ2E",
+    imagen:
+      "https://m.media-amazon.com/images/S/pv-target-images/d06be18365f460449056a4e3bcb22198f5a3c01a72ec9787f2fafd7a100f948b.jpg",
+    category: "comedia",
+  },
+  {
+    id: v4(),
+    name: "Aggretsuko",
+    description: `Cuando tu oficina está llena de los típicos clichés jerárquicos, hay que aprender a llevarlos. En esta historia seguimos a Retsuko, una panda roja que ha llevado mucha carga laboral por culpa de compañeros de trabajo que son buenos para nada. Entre eso y su jefe que pretende trabajar cuando realmente no hace nada, Retsuko necesita una forma de descargar toda su ira.`,
+    video: "https://www.youtube.com/embed/VBvHvjLGvhY?si=8ttRJZHQ_STpgXBl",
+    imagen:
+      "https://www.hollywoodreporter.com/wp-content/uploads/2019/10/aggretsuko-moment-feature-image_copy.jpg",
+    category: "comedia",
+  },
+  {
+    id: v4(),
+    name: "Bungou Stray Dogs",
+    description: `Atsushi Nakajima es un huérfano que nunca ha tenido un sentido de pertenencia sólido. En el orfanato lo tratan como basura, y decir que está aliviado de haber sido expulsado del mismo, no sería exagerar. Sin embargo, antes de irse, dejó un pendiente: la aparición misteriosa de un tigre que solamente Atsushi parece no haber visto.`,
+    video: "https://www.youtube.com/embed/f9OV_KzR3SM?si=rzEHHnwO1Gk0bFMy",
+    imagen:
+      "https://areajugones.sport.es/wp-content/uploads/2022/08/bungou-stray-dogs-s4-imagen.jpg",
+    category: "comedia",
+  },
+  {
+    id: v4(),
+    name: "Saiki Kusuo no Psi-nan",
+    description: `En teoría, ser psíquico puede parecer espectacular, pero en realidad puede ser muy aburrido. Saiki Kusuo no Psi-nan es un anime ligero que se centra precisamente en la voluntad de ser normal de un joven poderoso con un conjunto de personajes hilarantes y un protagonista memorable.`,
+    video: "https://www.youtube.com/embed/LpkBwNqI3HA?si=Mpt2PovVTgNrIDFM",
+    imagen:
+      "https://freakelitex.com/wp-content/uploads/2018/09/The-Disastrous-Life-of-Saiki-K..jpg",
+    category: "comedia",
+  },
 ];
 
 export default series;
