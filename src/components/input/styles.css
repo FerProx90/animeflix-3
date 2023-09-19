@@ -2,8 +2,14 @@
   position: relative;
 }
 
-.input input::placeholder {
+.input input::placeholder,
+.input textarea::placeholder {
   visibility: hidden;
+}
+
+.input textarea {
+  height: 100px;
+  resize: none;
 }
 
 .input label {
@@ -15,6 +21,15 @@
   left: 10px;
 }
 
+.input textarea ~ label {
+  font-size: 1.2rem;
+  color: var(--color-gris);
+
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+
 .input input:not(:placeholder-shown) + label,
 .input input:focus + label {
   font-size: 0.75rem;
@@ -22,7 +37,14 @@
   transition: all 0.25s;
 }
 
-.input input {
+.input textarea:not(:placeholder-shown) + label,
+.input textarea:focus + label {
+  font-size: 0.75rem;
+  top: 0.2rem;
+  transition: all 0.25s;
+}
+
+.input_inp {
   padding: 1.2rem 0.8rem 0.8rem;
   width: 100%;
   color: var(--color-gris);
@@ -33,4 +55,33 @@
 
   font-size: 1rem;
   line-height: 1.2rem;
+}
+
+.input-select {
+  padding: 1.2rem 0.8rem 0.8rem;
+  width: 100%;
+  /* color: var(--color-gris); */
+
+  border: 1px solid var(--color-gris-opacity);
+  border-radius: 5px;
+  outline: none;
+
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+.input_serie-form {
+  background: none;
+
+  border: 2px solid #00ffff9d;
+  color: var(--color-gris);
+}
+
+.input_serie-form option:first-child {
+  color: var(--color-gris);
+}
+
+.input-color {
+  height: 50px;
+  padding: 15px 5px 5px;
 }

@@ -1,10 +1,10 @@
 import "./styles.css";
-// import "../../index.css";
 import Button from "./../button/Button";
 import useUser from "../../hooks/UseUser";
 import { useLocation } from "react-router-dom";
 import { routesHash } from "../../utils/utils-routes";
 import { useEffect, useState } from "react";
+import { BiUserCircle } from "react-icons/bi";
 
 function Header() {
   const { user } = useUser();
@@ -20,9 +20,9 @@ function Header() {
 
   const location = useLocation();
 
-  const { headerButtons, headerStyle } = routesHash.find(
-    ({ route }) => location.pathname === route
-  );
+  const { headerButtons, headerStyle } =
+    routesHash.find(({ route }) => location.pathname === route) ??
+    routesHash[0];
 
   return (
     <header className={`container navbar-${headerStyle}`}>
@@ -45,7 +45,14 @@ function Header() {
                 </li>
               );
           })}
-          <li>{user && <span className="navbar_user">{user}</span>}</li>
+          <li>
+            {user && (
+              <div className="user_container">
+                <BiUserCircle />
+                <span className="navbar_user">{user}</span>
+              </div>
+            )}
+          </li>
         </ul>
       </nav>
     </header>

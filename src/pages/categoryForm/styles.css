@@ -1,0 +1,50 @@
+.form-serie_container {
+  flex-direction: column;
+  color: var(--color-blanco);
+  font-size: 1.5rem;
+}
+
+.form_category {
+  flex-direction: column;
+  gap: 50px;
+}
+
+table {
+  color: var(--color-blanco);
+  font-size: 1.2rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333333;
+}
+
+th {
+  padding: 10px 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+}
+
+tbody tr:hover {
+  background-color: #444444;
+}
+
+td div {
+  cursor: pointer;
+}
+
+.category_table-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.td-empty {
+  text-align: center;
+  padding: 1.5rem 4rem;
+}

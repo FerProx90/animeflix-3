@@ -7,17 +7,25 @@ import Button from "../../components/button/Button";
 
 function Login() {
   const { setUser } = useUser();
-  const [usuario, setUsuario] = useState();
+  const [usuario, setUsuario] = useState("");
   const [isNewAccount, setIsNewAccount] = useState(false);
-  const [password, setPassword] = useState();
-  const [passwordConfirm, setPasswordConfirm] = useState();
+  const [password, setPassword] = useState("");
+  const [passwordConfirm, setPasswordConfirm] = useState("");
   const [isValidPassword, setIsValidPassword] = useState(true);
   const history = useNavigate();
 
   const loginData = [
-    { id: 1, setData: setUsuario, placehold: "usuario", required: "required" },
+    {
+      id: 1,
+      inputValue: usuario,
+      setData: setUsuario,
+      placehold: "usuario",
+      required: "required",
+    },
     {
       id: 2,
+      inputValue: password,
+      setData: setPassword,
       inputType: "password",
       placehold: "contrasena",
       required: "required",
@@ -27,12 +35,14 @@ function Login() {
   const registerData = [
     {
       id: 1,
+      inputValue: usuario,
       setData: setUsuario,
       placehold: "Nombre usuario",
       required: "required",
     },
     {
       id: 2,
+      inputValue: password,
       setData: setPassword,
       inputType: "password",
       placehold: "Contrasena",
@@ -41,6 +51,7 @@ function Login() {
     {
       id: 3,
       setData: setPasswordConfirm,
+      inputValue: passwordConfirm,
       inputType: "password",
       placehold: "Repetir contrasena",
       required: "required",
@@ -64,7 +75,6 @@ function Login() {
 
   return (
     <div className="login">
-      <div className="login_bar"></div>
       <div className="login_logo"></div>
       <div className="login_form_container">
         <div className="login_card">

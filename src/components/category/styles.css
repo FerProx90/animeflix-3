@@ -1,8 +1,9 @@
 /* Estilos para el contenedor de categoría */
 .category_container {
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 10px;
-  background-color: var(--color-gris-oscuro);
+  background-color: var(--background-primary);
 
   display: flex;
   justify-content: center;
@@ -14,31 +15,7 @@
   width: 120px;
   margin-left: 5rem;
   padding: 0 0 0.3rem;
-  border-bottom: 2px solid var(--color-accion);
   color: var(--color-blanco);
   font-size: 1.5rem;
   text-align: center;
-}
-
-/* Estilos para el contenedor del carrusel */
-.wrapper .carrousel_container {
-  width: 100%;
-
-  cursor: grab;
-}
-
-.carrousel_container::-webkit-scrollbar {
-  display: none; /* Oculta la barra de desplazamiento de WebKit (Chrome, Safari) */
-}
-
-/* Estilos para las tarjetas del carrusel */
-.carrousel_card {
-  width: 300px;
-  height: 150px;
-  display: inline-block;
-
-  background-color: black;
-
-  pointer-events: none;
-  outline: 1px solid red;
 }

@@ -21,6 +21,9 @@
   --color-naranja: #ffa600e3;
   --color-azul-oscuro: #000080; /* Azul oscuro */
 
+  --background-primary: #02050a;
+  --background-primary-opacity: #02050a81;
+
   /* Colores de categorías */
   --color-accion: #ff5733; /* Naranja brillante */
   --color-comedia: #ffa500; /* Amarillo anaranjado */

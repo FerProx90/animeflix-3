@@ -12,7 +12,7 @@ export const routesHash = [
     headerButtons: [
       {
         isLogged: false,
-        text: "Regresar",
+        text: "Pagina principal",
         location: "/",
         customButton: "login",
       },
@@ -22,8 +22,25 @@ export const routesHash = [
   {
     route: "/inicio",
     headerButtons: [
-      { isLogged: true, text: "Inicio", location: "/" },
-      { isLogged: true, text: "Nueva serie", location: "/serie" },
+      { isLogged: true, text: "Home", location: "/" },
+      { isLogged: true, text: "Nueva serie", location: "/serie-form" },
+      { isLogged: false, text: "Sign In", location: "/login" },
+    ],
+    headerStyle: "inicio",
+  },
+  {
+    route: "/serie-form",
+    headerButtons: [
+      { isLogged: true, text: "Inicio", location: "/inicio" },
+      { isLogged: false, text: "Sign In", location: "/login" },
+    ],
+    headerStyle: "inicio",
+  },
+  {
+    route: "/categoria-form",
+    headerButtons: [
+      { isLogged: true, text: "Inicio", location: "/inicio" },
+      { isLogged: true, text: "Regresar", location: "/serie-form" },
       { isLogged: false, text: "Sign In", location: "/login" },
     ],
     headerStyle: "inicio",

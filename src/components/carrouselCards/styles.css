@@ -1,14 +1,59 @@
-/* .carrousel_card {
+.slider_container {
+  cursor: wrap;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.slider {
+  padding: 15px 5px;
+  display: flex;
+  gap: 10px;
+
+  cursor: grab;
+}
+
+.slider-item {
+  position: relative;
   width: 300px;
+  max-width: 300px;
   height: 150px;
-  display: inline-block;
 
-  background-color: black;
-  outline: 1px solid red; */
+  flex: 1 0 auto;
+}
 
-/* flex: 1 0 auto; */
+.slider-item img {
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
 
-/* scroll-snap-align: start; */
+.item-data {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-/* transition: transform 0.3s ease-in-out; */
-/* } */
+  width: 100%;
+  height: 100%;
+
+  color: var(--color-blanco);
+  font-size: 0.8rem;
+  text-transform: capitalize;
+
+  opacity: 0;
+
+  transition: all 0.2s;
+  box-sizing: content-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.item-data h2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}

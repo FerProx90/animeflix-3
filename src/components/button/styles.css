@@ -14,6 +14,10 @@
   border: none;
 }
 
+.button-modal:hover {
+  background-color: var(--color-rojo-oscuro-hover);
+}
+
 .button-home {
   padding: 0.7rem 2rem;
   font-size: 1.2rem;
@@ -44,8 +48,46 @@
   background-color: var(--color-verde-oscuro-hover);
 }
 
+.button-form-restart {
+  margin-top: 7px;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+
+  background-color: var(--color-gris);
+  font-weight: 700;
+
+  transition: all 0.3s;
+}
+
+.button-form-restart:hover {
+  background-color: var(--color-gris-opacity);
+}
+
 .button-create_account {
   background: none;
   text-decoration: underline;
   color: var(--color-ciencia-ficcion);
+}
+
+.serie-form {
+  background-color: #ffa500;
+}
+
+.serie-form:hover {
+  background-color: #ff8000;
+}
+
+.button-new-category {
+  width: 60%;
+  background: none;
+  border: 2px solid var(--color-blanco);
+  text-align: center;
+}
+
+.button-cancel {
+  background-color: var(--color-gris);
+}
+
+.button-cancel:hover {
+  background-color: var(--color-gris-oscuro);
 }

@@ -1,11 +1,20 @@
-import React from "react";
 import { PiPlayFill, PiInfoBold } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 import "./styles.css";
+import useSerie from "../../hooks/UseSerie";
 
-function ButtonSeries() {
+function ButtonSeries({ idSerie }) {
+  const navigate = useNavigate();
+  const { setSerieName } = useSerie();
+
+  const handleClick = () => {
+    setSerieName(idSerie);
+    navigate("/serie");
+  };
+
   return (
     <div className="buttons-series_container">
-      <button className="button-play">
+      <button className="button-play" onClick={handleClick}>
         <PiPlayFill />
         Play
       </button>

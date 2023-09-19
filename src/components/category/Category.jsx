@@ -1,19 +1,40 @@
 import "./styles.css";
 import CarrouselCard from "../carrouselCards/CarrouselCards";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import useUser from "../../hooks/UseUser";
 
-function Category() {
-  // const dragging = (e) => {
-  //   console.log(e.target);
-  //   console.log(e.target.scrollLeft);
-  //   e.target.scrollLeft = e.pageX;
-  // };
+function Category({ categoryName, categoryColor }) {
+  const { series } = useUser();
+  const [hasSeries, setHasSeries] = useState();
+  const [seriesCategory, setSeriesCategory] = useState();
+
+  useEffect(() => {
+    const seriesFind = series?.find(
+      (ser) => ser.category.toLowerCase() === categoryName.toLowerCase()
+    );
+
+    const seiresFilter = series?.filter(
+      (el) => categoryName?.toLowerCase() === el?.category.toLowerCase()
+    );
+
+    setHasSeries(seriesFind);
+    setSeriesCategory(seiresFilter);
+  }, [series]);
 
   return (
-    <div className="category_container">
-      <h2 className="category_title">Accion</h2>
-      <CarrouselCard />
-    </div>
+    <>
+      {hasSeries && (
+        <div className="category_container">
+          <h2
+            className="category_title"
+            style={{ borderBottom: `2px solid ${categoryColor}` }}
+          >
+            {categoryName}
+          </h2>
+          <CarrouselCard seriesCategory={seriesCategory} />
+        </div>
+      )}
+    </>
   );
 }
 

@@ -1,21 +1,50 @@
-import { useState } from "react";
 import "./styles.css";
+import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import ButtonSeries from "./../buttonSeries/ButtonSeries";
 
-const carrousels = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function CarrouselCard({ seriesCategory }) {
+  const [width, setWidth] = useState(0);
+  const carouselRef = useRef();
 
-function CarrouselCard() {
+  useEffect(() => {
+    setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
+  }, [carouselRef]);
+
   return (
-    <div className="wrapper">
-      <div className="carrousel_container">
-        {carrousels.map((el, i) => {
-          return (
-            <figure key={i} className="carrousel_card">
-              <img src="" alt="Nombre serie" />
-              <div></div>
-            </figure>
-          );
-        })}
-      </div>
+    <div>
+      <motion.div className="slider_container" ref={carouselRef}>
+        <motion.div
+          className="slider"
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+        >
+          {seriesCategory.map((el, i) => {
+            return (
+              <motion.div
+                key={i}
+                className="slider-item"
+                whileHover={{ scale: 1.08, zIndex: 2 }}
+                whileTap={{ scale: 1 }}
+              >
+                <img src={el.imagen} alt="Nombre serie" />
+                <motion.div
+                  className="item-data"
+                  whileHover={{
+                    opacity: 1,
+                    backgroundColor: "var(--background-primary-opacity)",
+                  }}
+                >
+                  <h2 style={{ paddingLeft: "15px" }}>{el.name}</h2>
+                  <div style={{ paddingLeft: "15px" }}>
+                    <ButtonSeries idSerie={el.id} />
+                  </div>
+                </motion.div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
