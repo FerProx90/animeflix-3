@@ -19,3 +19,9 @@
   font-size: 1.5rem;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .category_title {
+    margin-left: 1rem;
+  }
+}

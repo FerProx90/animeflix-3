@@ -48,3 +48,10 @@ td div {
   text-align: center;
   padding: 1.5rem 4rem;
 }
+
+@media (max-width: 768px) {
+  .table_container {
+    width: 95%;
+    overflow-x: auto;
+  }
+}

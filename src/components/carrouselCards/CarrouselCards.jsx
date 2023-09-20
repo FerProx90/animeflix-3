@@ -5,11 +5,16 @@ import ButtonSeries from "./../buttonSeries/ButtonSeries";
 
 function CarrouselCard({ seriesCategory }) {
   const [width, setWidth] = useState(0);
+  const [activeCard, setActiveCard] = useState(null);
   const carouselRef = useRef();
 
   useEffect(() => {
     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
   }, [carouselRef]);
+
+  const handleClick = (id) => {
+    setActiveCard(id === activeCard ? null : id);
+  };
 
   return (
     <div>
@@ -29,7 +34,16 @@ function CarrouselCard({ seriesCategory }) {
               >
                 <img src={el.imagen} alt="Nombre serie" />
                 <motion.div
-                  className="item-data"
+                  className={`item-data`}
+                  onClick={() => handleClick(el.id)}
+                  style={
+                    activeCard === el.id
+                      ? {
+                          opacity: "1",
+                          backgroundColor: "var(--background-primary-opacity)",
+                        }
+                      : {}
+                  }
                   whileHover={{
                     opacity: 1,
                     backgroundColor: "var(--background-primary-opacity)",

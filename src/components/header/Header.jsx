@@ -26,7 +26,7 @@ function Header() {
 
   return (
     <header className={`container navbar-${headerStyle}`}>
-      <nav className={`navbar`}>
+      <nav className="navbar">
         <img
           className="navbar_logo"
           src="https://fontmeme.com/permalink/230906/dc258570a53571d2cfa446d10ac0bcf2.png"

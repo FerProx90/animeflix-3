@@ -92,3 +92,11 @@
 .button-cancel:hover {
   background-color: var(--color-gris-oscuro);
 }
+
+@media (max-width: 768px) {
+  .button-home {
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+}

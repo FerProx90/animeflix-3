@@ -26,11 +26,9 @@
 
   /* Colores de categorías */
   --color-accion: #ff5733; /* Naranja brillante */
-  --color-comedia: #ffa500; /* Amarillo anaranjado */
-  --color-drama: #800080; /* Púrpura intenso */
-  --color-ciencia-ficcion: #00bfff; /* Azul cielo */
-  --color-documentales: #8b4513; /* Marrón terracota */
-  --color-infantil: #ffff00; /* Amarillo brillante */
+  --color-drama: #ff00ff; /* Amarillo anaranjado */
+  --color-horror: #800080; /* Púrpura intenso */
+  --color-comedia: #00bfff; /* Azul cielo */
 
   /* Colores de botones */
   --color-boton: #e74c3c;
@@ -45,6 +43,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto", sans-serif;
 }
 
 /* Fuente para el cuerpo del texto y descripciones de películas */
@@ -67,4 +66,10 @@ h3 {
 
 .container {
   padding: 0 5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
 }

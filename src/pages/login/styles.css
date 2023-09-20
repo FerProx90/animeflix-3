@@ -47,3 +47,29 @@
 .login_card span {
   color: var(--color-gris);
 }
+
+@media (max-width: 768px) {
+  .login_card {
+    min-width: 200px;
+    width: 100%;
+    z-index: 2;
+    background-color: var(--color-blanco);
+    opacity: 0.95;
+  }
+
+  .login {
+    justify-content: center;
+  }
+
+  .login_form_container {
+    width: 90%;
+  }
+
+  .login_logo {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+}

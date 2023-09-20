@@ -13,16 +13,8 @@ export default function Modal({ isOpenModal, setIsOpenModal, onConfirmEvent }) {
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "center",
-                gap: "0.5rem",
-                fontSize: "1.1rem",
-              }}
-            >
-              <GrCircleAlert />
+            <div className="modal-advice">
+              <GrCircleAlert fontSize={30} />
               <p>Seguro que desea eliminar la categoria?</p>
             </div>
             <div className="modal_buttons">

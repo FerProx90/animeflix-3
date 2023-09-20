@@ -12,7 +12,7 @@ export const routesHash = [
     headerButtons: [
       {
         isLogged: false,
-        text: "Pagina principal",
+        text: "Home",
         location: "/",
         customButton: "login",
       },

@@ -59,3 +59,10 @@
   text-overflow: ellipsis;
   max-width: 300px;
 }
+
+@media (max-width: 768px) {
+  .slider-item {
+    width: 250px;
+    height: 130px;
+  }
+}

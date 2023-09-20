@@ -112,7 +112,7 @@ function CategoryForm() {
 
   const CategoriesTable = ({ categoriesData }) => {
     return (
-      <table className="category_table">
+      <table>
         <thead>
           <tr>
             <th>Categoria</th>
@@ -181,7 +181,9 @@ function CategoryForm() {
             onClickEvent={resetInputs}
           />
         </div>
-        <CategoriesTable categoriesData={categories} />
+        <div className="table_container">
+          <CategoriesTable categoriesData={categories} />
+        </div>
       </div>
       <Modal
         onConfirmEvent={handleDelete}

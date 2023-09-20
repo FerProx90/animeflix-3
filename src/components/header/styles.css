@@ -62,3 +62,20 @@ header {
 
   font-size: 1.4rem;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 1.5rem 0;
+  }
+
+  .navbar_buttons {
+    flex-direction: row-reverse;
+  }
+
+  .user_container {
+    border: 1px solid var(--color-blanco);
+    border-radius: 5px;
+    max-width: 110px;
+  }
+}

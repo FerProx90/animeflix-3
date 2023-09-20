@@ -6,7 +6,7 @@ const series = [
     name: "shingeki no kyojin",
     description:
       "La trama gira en torno a Eren Jaeger quien después de perder a su madre a manos de los titanes, decide unirse al «Ejército de las murallas» junto a su Mikasa Ackerman y su Armin Arlert con el objetivo de vengar la muerte de su madre y destruir a los titanes.",
-    video: "https://www.youtube.com/embed/sFuAhHTgABs?si=Ro0D8k0QQNQW3O-h",
+    video: "https://www.youtube.com/embed/sFuAhHTgABs?si=9W1GfjhnVVica6gP",
     imagen:
       "https://i.blogs.es/f7af36/attack-on-titan-final-season/450_1000.jpeg",
     category: "accion",
@@ -264,6 +264,17 @@ const series = [
     imagen:
       "https://freakelitex.com/wp-content/uploads/2018/09/The-Disastrous-Life-of-Saiki-K..jpg",
     category: "comedia",
+  },
+  {
+    id: "kimetsu",
+    name: "Kimetsu no Yaiba",
+    description: `La serie narra las desventuras de Tanjiro, un joven de un Japón feudal
+    fantástico que se ve abocado a la venganza después de que un demonio
+    acabe con toda su familia, a excepción de su hermana, Nezuko, también
+    demoníaca y sedienta de sangre.`,
+    video: "https://www.youtube.com/embed/h50uJvY0Ikw?si=yp3ZAxAr1RiqYio5",
+    imagen: "",
+    category: "",
   },
 ];
 

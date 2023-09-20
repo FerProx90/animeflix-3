@@ -10,14 +10,14 @@ export const UserContextProvider = ({ children }) => {
     {
       id: v4(),
       name: "Accion",
-      color: "#ff00ff",
+      color: "#ff5733",
       description:
         "Por lo general, presentan escenas de lucha, persecuciones, explosiones y tiroteos.",
     },
     {
       id: v4(),
       name: "Horror",
-      color: "#ff00ff",
+      color: "#800080",
       description: "se enfoca en crear una atmósfera de miedo y tensión.",
     },
     {
@@ -29,7 +29,7 @@ export const UserContextProvider = ({ children }) => {
     {
       id: v4(),
       name: "Comedia",
-      color: "#ff00ff",
+      color: "#00bfff",
       description:
         " Género televisivo que se caracteriza por su tono humorístico y ligero.",
     },

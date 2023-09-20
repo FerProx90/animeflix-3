@@ -1,7 +1,7 @@
 import { PiPlayFill, PiInfoBold } from "react-icons/pi";
 import { useNavigate } from "react-router-dom";
-import "./styles.css";
 import useSerie from "../../hooks/UseSerie";
+import "./styles.css";
 
 function ButtonSeries({ idSerie }) {
   const navigate = useNavigate();
